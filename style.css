@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Merriweather', serif; 
+    list-style: none;   
+}
+/*Barra de navegacion y logo del header*/
+header.cabecera{
+    width: 100%;
+    background-color:#bdb7b1; 
+    background-color: #a79c92;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23bdb7b1' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}   
+.logo{
+    width: 200px;
+
+}
+.logo img{
+    width: 100%;
+}
+.cabecera__navegacion{
+    width: 100%;
+}
+.cabecera__navegacion__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cabecera__navegacion__lista a{
+    margin: 1vw;
+    text-transform: uppercase;
+    color:black;
+    text-align: center;
+}
+.cabecera__navegacion__lista li{
+    background-color: #968C83; 
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px 0 #000;
+    align-items: center;
+    margin: 20px;
+}
+li:hover a{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}/*Contenido*/
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+body{
+    background-color: #D6D2C4;
+}
+/*Titulo Principal*/
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 100px;
+    color: black;
+}
+.envio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    
+}
+.pagina__principal div{
+    text-align: center;
+}
+.pagina__principal p{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-size: 18px;
+    color:whitesmoke;
+    margin-bottom: 10px;
+}
+.pagina__principal h1{
+    text-align: center; 
+    margin-top: 200px;
+    color: black;
+}
+.pagina__principal h2{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+/*Imagen de fondo*/
+.contenido{
+    background-color: #D6D2C4;
+    background-image: url(./imagenes/fondo-pagina.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+   
+}
+/* Areas */
+.contenido-grid{
+    display: grid;
+    grid-template-areas:
+    "cabecera cabecera cabecera"
+    "principal principal principal"
+    "pie pie pie";
+}
+/* /* Areas Determinadas */
+.cabecera-area{
+    grid-area: cabecera;
+}
+.main-area{
+    grid-area: principal;
+}
+.pie-area{
+    grid-area: pie;
+} 
+/* Quienes somos */
+.texto{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 160px;
+    text-justify: auto;
+}
+/*Productos Lista*/
+.productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.productos__titulo{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 150px;
+}
+.productos__lista{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/*Imagenes y galeria*/
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 80px;    
+}
+.imagenes{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.imagen__img{
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+/*Formulario, iframe, datos de contacto*/
+.formulario{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.iframe {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 20px;
+}
+.direccion li{
+    text-align: center;
+    margin-top: 20px;
+}
+.slogan h2{
+    text-align: center; 
+    margin-top: 0px;  
+}
+.slogan p{
+    text-align: center;
+    padding: 20px;
+}
+/*Footer y Redes Sociales*/
+.pie{    
+    color: black;
+    position: fixed; 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    bottom: 0%;    
+    background-color: #bdb7b1;
+    background-color: #a79c92;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23bdb7b1' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+.pie__lista li{
+    padding-top: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .contenido-grid{
+        grid-template-areas: 
+        "cabecera"
+        "principal"
+        "pie";
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .cabecera__navegacion{
+        width: 60%%;
+        text-align: center;
+    }
+    .cabecera__navegacion li{
+        font-size: 20px;
+    }
+    .logo{
+        margin: auto;
+        flex-direction: column;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .pagina__principal h1{
+        font-size: 140px;
+    }
+    .pagina__principal h2{
+        font-size: 30px;
+    }
+    .pagina__principal p{
+        font-size: 24px;
+    }
+    .main-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 0px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    .main-grid h1{
+        font-size: 100px;
+        margin-top: auto;
+    }
+    .productos__titulo{
+        font-size: 60px;
+    }
+    .productos__lista{
+        font-size: 30px;
+    }
+    /* .envio{
+        bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+    } */
+    .texto{
+        font-size: 26px;
+        padding: 10px;
+    }
+    .texto h1{
+        font-size: 80px ;
+    }
+    .formulario{
+        font-size: 24px;
+    }
+    .iframe{
+        margin-top: 40px;
+    }
+    .slogan{
+        font-size: 26px;
+    }
+    .direccion{
+        font-size: 20px;
+    }
+    .slogan p{
+        font-size: 24px;
+    }
+    .pie{
+        grid-template-columns: 1fr;
+    }
+    .galeria{
+        grid-template-columns: 1fr;
+    }  
+    
+}
