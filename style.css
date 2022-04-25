@@ -20,6 +20,9 @@ header.cabecera{
     width: 200px;
 
 }
+.logo:hover{
+    transform: scale(1.1);
+}
 .logo img{
     width: 100%;
 }
@@ -46,8 +49,8 @@ header.cabecera{
     align-items: center;
     margin: 20px;
 }
-li:hover a{
-    color: white;
+.cabecera__navegacion__lista__item:hover{
+    transform: scale(1.2);
 }
 a{
     text-decoration: none;
